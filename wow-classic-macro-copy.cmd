@@ -53,5 +53,5 @@
 
 	:: Copy the heals macro cache files to the target directory class name file 
 	SET SRC_DIR_ROOT="%WOW_DRIVE%\Program Files (x86)\World of Warcraft\_classic_era_\WTF\Account\%heals_account_name%\%server%"
-	copy /y %SRC_DIR_ROOT%\%druid%\macros-cache.txt %TARGET_DIR%\macros-cache_drud.txt
+	copy /y %SRC_DIR_ROOT%\%druid%\macros-cache.txt %TARGET_DIR%\macros-cache_druid.txt
 	copy /y %SRC_DIR_ROOT%\%priest%\macros-cache.txt %TARGET_DIR%\macros-cache_priest.txt
