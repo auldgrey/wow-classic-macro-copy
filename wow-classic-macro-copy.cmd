@@ -26,6 +26,8 @@
 ::
 ::
 
+        SET server=Whitemane
+
 	SET melee_account_name=SECRET-MELEE-ACCOUNT-NAME
 	SET rogue=Septicus
 	SET warrior=Bearmaul
@@ -43,13 +45,13 @@
 	mkdir /s/q %TARGET_DIR%
 
     :: Set the melee account directory source directory
-	SET SRC_DIR_ROOT="%WOW_DRIVE%\Program Files (x86)\World of Warcraft\_classic_era_\WTF\Account\%melee_account_name%\Whitemane"
+	SET SRC_DIR_ROOT="%WOW_DRIVE%\Program Files (x86)\World of Warcraft\_classic_era_\WTF\Account\%melee_account_name%\%server%"
 	
 	:: Copy the melee macro cache files to the target directory class name file 
 	copy /y %SRC_DIR_ROOT%\%rogue%\macros-cache.txt %TARGET_DIR%\macros-cache_rogue.txt
 	copy /y %SRC_DIR_ROOT%\%warrior%\macros-cache.txt %TARGET_DIR%\macros-cache_warrior.txt
 
 	:: Copy the heals macro cache files to the target directory class name file 
-	SET SRC_DIR_ROOT="%WOW_DRIVE%\Program Files (x86)\World of Warcraft\_classic_era_\WTF\Account\%heals_account_name%\Whitemane"
+	SET SRC_DIR_ROOT="%WOW_DRIVE%\Program Files (x86)\World of Warcraft\_classic_era_\WTF\Account\%heals_account_name%\%server%"
 	copy /y %SRC_DIR_ROOT%\%druid%\macros-cache.txt %TARGET_DIR%\macros-cache_drud.txt
 	copy /y %SRC_DIR_ROOT%\%priest%\macros-cache.txt %TARGET_DIR%\macros-cache_priest.txt
