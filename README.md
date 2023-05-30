@@ -1,5 +1,5 @@
 # wow-classic-macro-copy
-A simple Windows batch script to copy macro files to a Documents folder for backup or upload to your favorite cloud storage to share between PCs.
+A simple Windows batch script to copy macro files to a Documents folder for backup or upload to your favorite cloud storage to share between PCs ... apologies  MAcOS folks, port the script yourself :)
 
 The files should be copied into your user Documents folder:
   %USERPROFILE%\Documents\wow_macros
